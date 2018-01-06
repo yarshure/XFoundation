@@ -27,6 +27,7 @@
 		6961FDE020013C2C00EB5EBA /* XFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6961FDE220013C2C00EB5EBA /* XFoundationiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XFoundationiOS.h; sourceTree = "<group>"; };
 		6961FDE320013C2C00EB5EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6961FDEE20013EFB00EB5EBA /* iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = iOS.xcconfig; path = XFoundationiOS/iOS.xcconfig; sourceTree = SOURCE_ROOT; };
 		697DF08D1FFF10AF00C6A64C /* XFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		697DF0901FFF10AF00C6A64C /* XFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XFoundation.h; sourceTree = "<group>"; };
 		697DF0911FFF10AF00C6A64C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +61,7 @@
 		6961FDE120013C2C00EB5EBA /* XFoundationiOS */ = {
 			isa = PBXGroup;
 			children = (
+				6961FDEE20013EFB00EB5EBA /* iOS.xcconfig */,
 				6961FDE220013C2C00EB5EBA /* XFoundationiOS.h */,
 				6961FDE320013C2C00EB5EBA /* Info.plist */,
 			);
@@ -245,6 +247,7 @@
 /* Begin XCBuildConfiguration section */
 		6961FDE520013C2C00EB5EBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6961FDEE20013EFB00EB5EBA /* iOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
@@ -270,6 +273,7 @@
 		};
 		6961FDE620013C2C00EB5EBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6961FDEE20013EFB00EB5EBA /* iOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
@@ -436,6 +440,7 @@
 		};
 		697DF0971FFF10AF00C6A64C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 697DF0AE1FFF615C00C6A64C /* mac.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
