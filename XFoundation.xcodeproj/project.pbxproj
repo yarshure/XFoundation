@@ -249,6 +249,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6961FDEE20013EFB00EB5EBA /* iOS.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -275,6 +276,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6961FDEE20013EFB00EB5EBA /* iOS.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
