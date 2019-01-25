@@ -9,30 +9,30 @@
 import Foundation
 
 public extension String {
-    public func delLastN(_ n:Int) ->String{
+    func delLastN(_ n:Int) ->String{
         
         let i = self.index(self.endIndex, offsetBy: 0 - n)
         let d = self.to(index: i)
         return d
         
     }
-    public func to(index:Int) ->String{
+    func to(index:Int) ->String{
         return String(self[..<self.index(self.startIndex, offsetBy:index)])
         
     }
-    public func to(index:String.Index) ->String{
+    func to(index:String.Index) ->String{
         return String(self[..<index])
         
     }
-    public func from(index:Int) ->String{
+    func from(index:Int) ->String{
         return String(self[self.index(self.startIndex, offsetBy:index)...])
         
     }
-    public func from(index:String.Index) ->String{
+    func from(index:String.Index) ->String{
         return String(self[index...])
         
     }
-    public func toIPv6Addr() -> Data?  {
+    func toIPv6Addr() -> Data?  {
         var addr = in6_addr()
         let retval = withUnsafeMutablePointer(to: &addr) {
             inet_pton(AF_INET6, self, UnsafeMutablePointer($0))
