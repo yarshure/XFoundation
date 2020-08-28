@@ -14,7 +14,7 @@ public func copyPublicKey(caCertificate:SecCertificate) ->SecKey?
     if #available(iOSApplicationExtension 10.3, *) {
         #if os(macOS)
             SecCertificateCopyPublicKey(caCertificate, &caPublicKey)
-        #elseif os(iOS)
+        #elseif os(iOS) && !targetEnvironment(UIKitForMac)
             caPublicKey = SecCertificateCopyPublicKey(caCertificate)
         #endif
     } else {
