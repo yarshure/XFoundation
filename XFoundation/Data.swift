@@ -28,15 +28,19 @@ extension Data{
         }
         let subData = self.subdata(in: index..<(index+stride))
         var ptr :UnsafePointer<T>?
-        
-        subData.withUnsafeBytes { (p:UnsafePointer<T>) -> Void in
-            ptr = p
+//Swift 4
+//        subData.withUnsafeBytes { (p:UnsafePointer<T>) -> Void in
+//            ptr = p
+//        }
+        subData.withUnsafeBytes { dataBytes in //UnsafeRawBufferPointer
+            let buffer: UnsafePointer<T> = dataBytes.baseAddress!.assumingMemoryBound(to: T.self)
+            ptr = buffer
         }
         return ptr!.pointee
     }
     static func testMemory(){
         let x:[UInt8] = [0xFF,0xFF,0x03,0x04]
-        let data = Data.init(bytes: x)
+        let data = Data.init(x)
         
         print("value \(try! data.valueForIndex(index: 0, type: UInt8.self))")
         print("value \(try! data.valueForIndex(index: 3, type: Int8.self))")
@@ -92,7 +96,8 @@ extension Data{
             let length = Int(INET_ADDRSTRLEN)
             var buffer = [CChar](repeating: 0, count: length)
             var p: UnsafePointer<Int8>! = nil
-            self.withUnsafeBytes({ (ptr: UnsafePointer<in_addr>)  in
+            self.withUnsafeBytes({ dataBytes in //UnsafeRawBufferPointer
+                let ptr: UnsafePointer<in_addr> = dataBytes.baseAddress!.assumingMemoryBound(to: in_addr.self)
                 p = inet_ntop(AF_INET, ptr, &buffer, UInt32(INET_ADDRSTRLEN))
                 
             })
@@ -106,7 +111,8 @@ extension Data{
             
             
             
-            self.withUnsafeBytes({ (ptr: UnsafePointer<in_addr>)  in
+            self.withUnsafeBytes({ dataBytes  in
+                let ptr: UnsafePointer<in_addr> = dataBytes.baseAddress!.assumingMemoryBound(to: in_addr.self)
                 p = inet_ntop(AF_INET, ptr, &buffer, UInt32(INET_ADDRSTRLEN))
                 
             })
