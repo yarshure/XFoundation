@@ -24,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69199DFD22A76BFD00538CB7 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		6924F5F9217585B500AF9795 /* libcommonCrypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcommonCrypto.tbd; path = usr/lib/system/libcommonCrypto.tbd; sourceTree = SDKROOT; };
 		6961FDE020013C2C00EB5EBA /* XFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6961FDE220013C2C00EB5EBA /* XFoundationiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XFoundationiOS.h; sourceTree = "<group>"; };
@@ -80,6 +81,7 @@
 		697DF0831FFF10AF00C6A64C = {
 			isa = PBXGroup;
 			children = (
+				69199DFD22A76BFD00538CB7 /* Package.swift */,
 				697DF08F1FFF10AF00C6A64C /* XFoundation */,
 				6961FDE120013C2C00EB5EBA /* XFoundationiOS */,
 				697DF08E1FFF10AF00C6A64C /* Products */,
