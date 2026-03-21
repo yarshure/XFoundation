@@ -56,19 +56,16 @@ extension Data{
         }
     }
     public func scanValue<T>(start: Int, length: Int) -> T {
-        //start+length > Data.last is security?
-        return self.subdata(in: start..<start+length).withUnsafeBytes { $0.pointee }
+        precondition(start >= 0 && length > 0 && start + length <= self.count)
+        return self.subdata(in: start ..< start + length).withUnsafeBytes { $0.load(as: T.self) }
     }
-    public var length:Int{
-        get {
-            return self.count
-        }
+    public var length: Int {
+        return self.count
     }
     //from start
-    public func dataToInt() ->Int32 {
-        //var a:Int32 = 0
-        let x:Int32  = self.scanValue(start: 0, length: 1)
-        //data.getBytes(&a, range: Range(0 ..< 1))
+    public func dataToInt() -> Int32 {
+        precondition(self.count >= 1)
+        let x: Int32 = self.scanValue(start: 0, length: 1)
         return x
     }
     public func data2Int(len:Int) ->Int32 {
@@ -104,22 +101,18 @@ extension Data{
             return String(cString:p)
             
             
-        }else {
+        } else {
             let length = Int(INET6_ADDRSTRLEN)
             var buffer = [CChar](repeating: 0, count: length)
             var p: UnsafePointer<Int8>! = nil
-            
-            
-            
-            self.withUnsafeBytes({ dataBytes  in
-                let ptr: UnsafePointer<in_addr> = dataBytes.baseAddress!.assumingMemoryBound(to: in_addr.self)
-                p = inet_ntop(AF_INET, ptr, &buffer, UInt32(INET_ADDRSTRLEN))
-                
+
+            self.withUnsafeBytes({ dataBytes in
+                let ptr: UnsafePointer<in6_addr> = dataBytes.baseAddress!.assumingMemoryBound(to: in6_addr.self)
+                p = inet_ntop(AF_INET6, ptr, &buffer, UInt32(INET6_ADDRSTRLEN))
             })
-            return String(cString:p)
-            
+
+            return String(cString: p)
         }
-        
     }
     //public func int32toIP(data: NSData) -> String {
     //    var ip:String = ""

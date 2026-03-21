@@ -55,24 +55,26 @@ open class BinaryDataScanner {
     }
     
     open func read<T: BinaryReadable>() -> T? {
-        if remaining < MemoryLayout<T>.size {
-            return nil
+        let size = MemoryLayout<T>.size
+        guard remaining >= size else { return nil }
+
+        let value: T = data.subdata(in: position ..< position + size).withUnsafeBytes { buffer in
+            buffer.load(as: T.self)
         }
-        
-        let v = data.withUnsafeRawPointer {
-            $0.advanced(by: position).load(as: T.self)
-        }
-        position += MemoryLayout<T>.size
-        return littleEndian ? v.littleEndian : v.bigEndian
+
+        position += size
+        return littleEndian ? value.littleEndian : value.bigEndian
     }
-    
+
     // swiftlint:disable variable_name
     open func skip(to n: Int) {
-        position = n
+        guard n >= 0 else { return }
+        position = min(n, data.count)
     }
-    
+
     open func advance(by n: Int) {
-        position += n
+        guard n >= 0 else { return }
+        position = min(position + n, data.count)
     }
     
     /* convenience read funcs */

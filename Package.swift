@@ -15,6 +15,10 @@ let package = Package(
             name: "XFoundation",
             dependencies: [],
             path: "XFoundation"),
+        .testTarget(
+            name: "XFoundationTests",
+            dependencies: ["XFoundation"],
+            path: "Tests/XFoundationTests"),
     ]
 )
 

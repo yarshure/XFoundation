@@ -1,0 +1,47 @@
+{
+  "": {
+    "swift-dependencies": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/master.swiftdeps"
+  },
+  "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/XFoundation/BinaryDataScanner.swift": {
+    "dependencies": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/BinaryDataScanner.d",
+    "object": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/BinaryDataScanner.swift.o",
+    "swiftmodule": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/BinaryDataScanner~partial.swiftmodule",
+    "swift-dependencies": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/BinaryDataScanner.swiftdeps",
+    "diagnostics": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/BinaryDataScanner.dia"
+  },
+  "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/XFoundation/Data.swift": {
+    "dependencies": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/Data.d",
+    "object": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/Data.swift.o",
+    "swiftmodule": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/Data~partial.swiftmodule",
+    "swift-dependencies": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/Data.swiftdeps",
+    "diagnostics": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/Data.dia"
+  },
+  "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/XFoundation/EncryptExtension.swift": {
+    "dependencies": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/EncryptExtension.d",
+    "object": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/EncryptExtension.swift.o",
+    "swiftmodule": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/EncryptExtension~partial.swiftmodule",
+    "swift-dependencies": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/EncryptExtension.swiftdeps",
+    "diagnostics": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/EncryptExtension.dia"
+  },
+  "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/XFoundation/File.swift": {
+    "dependencies": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/File.d",
+    "object": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/File.swift.o",
+    "swiftmodule": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/File~partial.swiftmodule",
+    "swift-dependencies": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/File.swiftdeps",
+    "diagnostics": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/File.dia"
+  },
+  "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/XFoundation/SFData.swift": {
+    "dependencies": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/SFData.d",
+    "object": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/SFData.swift.o",
+    "swiftmodule": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/SFData~partial.swiftmodule",
+    "swift-dependencies": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/SFData.swiftdeps",
+    "diagnostics": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/SFData.dia"
+  },
+  "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/XFoundation/String.swift": {
+    "dependencies": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/String.d",
+    "object": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/String.swift.o",
+    "swiftmodule": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/String~partial.swiftmodule",
+    "swift-dependencies": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/String.swiftdeps",
+    "diagnostics": "/Users/apple/github/Surf_open/Carthage/Checkouts/XFoundation/.build/arm64-apple-macosx/debug/XFoundation.build/String.dia"
+  }
+}

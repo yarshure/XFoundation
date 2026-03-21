@@ -1,0 +1,10 @@
+version: "Apple Swift version 5.1 (swiftlang-1100.0.43.3 clang-1100.0.26.3)"
+options: "b71d5fa9a6824f4374f32d171367dd67"
+build_time: [1561533168, 85652000]
+inputs:
+  "/Users/yarshure/git/x/Surf_open/Carthage/Checkouts/XFoundation/XFoundation/File.swift": [1560993058, 109803000]
+  "/Users/yarshure/git/x/Surf_open/Carthage/Checkouts/XFoundation/XFoundation/Data.swift": [1560993058, 108586000]
+  "/Users/yarshure/git/x/Surf_open/Carthage/Checkouts/XFoundation/XFoundation/BinaryDataScanner.swift": [1560993058, 108185000]
+  "/Users/yarshure/git/x/Surf_open/Carthage/Checkouts/XFoundation/XFoundation/String.swift": [1560993058, 111077000]
+  "/Users/yarshure/git/x/Surf_open/Carthage/Checkouts/XFoundation/XFoundation/SFData.swift": [1560993058, 110683000]
+  "/Users/yarshure/git/x/Surf_open/Carthage/Checkouts/XFoundation/XFoundation/EncryptExtension.swift": [1560993058, 109133000]
